@@ -31,7 +31,7 @@ dependencies {
     testImplementation(kotlin("test"))
     implementation(kotlin("script-runtime"))
     implementation("org.apache.kafka:kafka-clients:3.9.0")
-    implementation("com.google.api.grpc:proto-google-common-protos:2.52.0")
+    implementation("com.google.api.grpc:proto-google-common-protos:2.53.0")
     implementation("io.grpc:grpc-protobuf:${grpcVersion}")
     implementation("io.grpc:grpc-stub:${grpcVersion}")
     implementation("io.grpc:grpc-netty:${grpcVersion}")
@@ -40,10 +40,10 @@ dependencies {
     implementation("io.opentelemetry:opentelemetry-sdk:1.47.0")
     implementation("io.opentelemetry:opentelemetry-extension-annotations:1.18.0")
     implementation("org.apache.logging.log4j:log4j-core:2.24.3")
-    implementation("org.slf4j:slf4j-api:2.0.16")
+    implementation("org.slf4j:slf4j-api:2.0.17")
     implementation("com.google.protobuf:protobuf-kotlin:${protobufVersion}")
-    implementation("dev.openfeature:sdk:1.14.0")
-    implementation("dev.openfeature.contrib.providers:flagd:0.10.5")
+    implementation("dev.openfeature:sdk:1.14.1")
+    implementation("dev.openfeature.contrib.providers:flagd:0.11.3")
 
     if (JavaVersion.current().isJava9Compatible) {
         // Workaround for @javax.annotation.Generated
